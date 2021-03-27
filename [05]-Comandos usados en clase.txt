@@ -1,0 +1,91 @@
+//============LINEA DE COMANDOS==============
+ls  -> list
+pwd  ->  Print Working Directory
+cd -> Change Directory
+touch -> Crear un archivo
+mkdir -> make directory
+rm -> remove
+rm -rf -> remove recursive force
+
+//===============GIT===============
+
+Descargar -> https://git-scm.com/download/win
+git config --list
+
+https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Configurando-Git-por-primera-vez
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+
+Git clone url
+ls
+touch hello.html
+git add hello.html
+git commit -m "mensaje"
+git status
+git push (actualiza en github)
+*Realizar cambios
+git status
+git commit -am ""
+*Editar en la pagina de github
+git pull
+*Que pasa si 2 personas modifican un archivo al mismo tiempo -> Merge Conflicts
+*Editar mismas lineas en local y remoto. (No push local)
+git pull
+*Solucionar conflictos
+git commit -am ""
+git push
+
+git reset --hard <commit>
+git reset --hard origin/master 
+git push origin -f
+
+
+COMANDOS UTILES:
+git log   (Ver los cambios realizados)
+
+*Branching
+git branch
+git checkout -b <nombre_rama>
+git push --set-upstream origin <nombre_rama>
+
+git merge <branch>     **Une la rama <branch> a la rama actual
+	presione "i" (i para insertar)
+	escribe tu mensaje de fusión
+	presione "esc" (escapar)
+	escribir ": wq" (escribir y salir)
+	luego presione enter
+*FORKS
+
+
+**
+git diff archivo  (muestra los cambios realizados respecto al ultimo commit)
+git chekout archivo (restaura al ultimo commit)
+
+####Subir repo a Github###
+git remote add origin repo_internet
+git push -u origin master
+
+git rm --cached -r .  (Eliminar todos los archivos de stage area- Los add's pero no commit)
+
+
+###Ignorar sincronizacion###
+touch .gitignore
+(Agregar todos los archivos que debe ignorar. se puede  usar patrones *.txt)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
