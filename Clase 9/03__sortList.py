@@ -5,3 +5,5 @@ nombres.sort()
 asignaturas.sort(reverse=True)
 
 print(asignaturas)
+
+# Este es un mensaje de prueba
